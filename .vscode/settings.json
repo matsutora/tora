@@ -1,5 +1,8 @@
 {
-    "python.pythonPath": "/Users/sho/.local/share/virtualenvs/ec_push-L4B_NHWN/bin/python",
+    "python.pythonPath": "/usr/bin/python3",
     "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "cSpell.words": [
+        "mamazon"
+    ]
 }
