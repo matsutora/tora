@@ -7,7 +7,7 @@
 {% for object in object_list %}
 <li class="span3">
   <div class="thumbnail">
-      <a href="product_details.html"><img
+      <a href="{% url 'mamazon:product-detail' object.pk %}"><img
               src="{{object.thumbnail.url}}" alt="" /></a>
       <div class="caption">
           <h5>{{object.name}}</h5>
@@ -15,7 +15,7 @@
               {{object.description}}
           </p>
 
-          <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+          <h4 style="text-align:center"><a class="btn" href="{% url 'mamazon:product-detail' object.pk %}"> <i
                       class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i
                       class="icon-shopping-cart"></i></a>
               <a class="btn btn-primary" href="#">$ {{object.price}}</a></h4>

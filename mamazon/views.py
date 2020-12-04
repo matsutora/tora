@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView,ListView
+from django.views.generic import TemplateView,ListView,DetailView, detail
 from .models import Product
 
 
@@ -16,3 +16,8 @@ class ProductListView(ListView):
             qs = self.request.GET["query"]
             queryset = queryset.filter(name__contains=qs)
         return queryset
+
+
+class ProductDetailView(DetailView):
+    model = Product
+    template_name = "mamazon/detail.html"
