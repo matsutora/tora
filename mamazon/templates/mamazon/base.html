@@ -59,8 +59,8 @@
                 <div class="navbar-inner">
                     <a class="brand" href="index.html"><img
                             src="{% static "themes/images/mamazon.png" %}" alt="Mamazon" /></a>
-                    <form class="form-inline navbar-search" method="post" action="products.html">
-                        <input id="srchFld" class="srchTxt" type="text" />
+                    <form class="form-inline navbar-search" method="get" action="{% url 'mamazon:product-list' %}">
+                        <input id="srchFld" class="srchTxt" type="text" name="query" />
                         <select class="srchTxt">
                             <option>All</option>
                             <option>CLOTHES </option>

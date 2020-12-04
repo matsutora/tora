@@ -1,0 +1,27 @@
+{% extends 'mamazon/home.html' %}
+{% load static %}
+
+
+{% block products %}
+
+{% for object in object_list %}
+<li class="span3">
+  <div class="thumbnail">
+      <a href="product_details.html"><img
+              src="{{object.thumbnail.url}}" alt="" /></a>
+      <div class="caption">
+          <h5>{{object.name}}</h5>
+          <p>
+              {{object.description}}
+          </p>
+
+          <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i
+                      class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i
+                      class="icon-shopping-cart"></i></a>
+              <a class="btn btn-primary" href="#">$ {{object.price}}</a></h4>
+      </div>
+  </div>
+</li>
+{% endfor %}
+{% endblock products %}
+  
