@@ -1,0 +1,62 @@
+[
+  {
+      "model": "mamazon.Product",
+      "pk": 1,
+      "fields": {
+          "name": "SDカード",
+          "price": 50.0,
+          "description": "8GBのSDカードです。",
+          "thumbnail": "6.jpg"
+      }
+  },
+  {
+      "model": "mamazon.Product",
+      "pk": 2,
+      "fields": {
+          "name": "USBスティック",
+          "price": 10.0,
+          "description": "SDカードは含みません。",
+          "thumbnail": "7.jpg"
+      }
+  },
+  {
+      "model": "mamazon.Product",
+      "pk": 3,
+      "fields": {
+          "name": "SDカード",
+          "price": 80.0,
+          "description": "16GのSDカードです。",
+          "thumbnail": "8.jpg"
+      }
+  },
+  {
+      "model": "mamazon.Product",
+      "pk": 4,
+      "fields": {
+          "name": "デジタル一眼セット",
+          "price": 1000.0,
+          "description": "一式のセットです。",
+          "thumbnail": "9.jpg"
+      }
+  },
+  {
+      "model": "mamazon.Product",
+      "pk": 5,
+      "fields": {
+          "name": "SDカード",
+          "price": 50.0,
+          "description": "色違いのSDカードです。",
+          "thumbnail": "10.jpg"
+      }
+  },
+  {
+      "model": "mamazon.Product",
+      "pk": 6,
+      "fields": {
+          "name": "デジタル一眼",
+          "price": 900.0,
+          "description": "カメラのみです。",
+          "thumbnail": "11.jpg"
+      }
+  }
+]
